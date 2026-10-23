@@ -6,6 +6,7 @@
     android:padding="24dp"
     android:background="#FFFFFF">
 
+    <!-- Đảm bảo ID là tvTitle -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
@@ -17,6 +18,7 @@
         android:gravity="center"
         android:layout_marginBottom="24dp"/>
 
+    <!-- Đảm bảo ID là edtFruitName -->
     <EditText
         android:id="@+id/edtFruitName"
         android:layout_width="match_parent"
@@ -26,6 +28,7 @@
         android:paddingStart="16dp"
         android:layout_marginBottom="12dp"/>
 
+    <!-- Đảm bảo ID là edtFruitCategory -->
     <EditText
         android:id="@+id/edtFruitCategory"
         android:layout_width="match_parent"
@@ -35,6 +38,7 @@
         android:paddingStart="16dp"
         android:layout_marginBottom="12dp"/>
 
+    <!-- Đảm bảo ID là edtFruitPrice -->
     <EditText
         android:id="@+id/edtFruitPrice"
         android:layout_width="match_parent"
@@ -45,6 +49,7 @@
         android:paddingStart="16dp"
         android:layout_marginBottom="12dp"/>
 
+    <!-- Đảm bảo ID là edtFruitQuantity -->
     <EditText
         android:id="@+id/edtFruitQuantity"
         android:layout_width="match_parent"
@@ -55,6 +60,7 @@
         android:paddingStart="16dp"
         android:layout_marginBottom="12dp"/>
 
+    <!-- Đảm bảo ID là edtFruitExpiry -->
     <EditText
         android:id="@+id/edtFruitExpiry"
         android:layout_width="match_parent"
@@ -64,6 +70,7 @@
         android:paddingStart="16dp"
         android:layout_marginBottom="12dp"/>
 
+    <!-- Đảm bảo ID là edtFruitDesc -->
     <EditText
         android:id="@+id/edtFruitDesc"
         android:layout_width="match_parent"
@@ -74,6 +81,7 @@
         android:padding="16dp"
         android:layout_marginBottom="24dp"/>
 
+    <!-- Đảm bảo ID là btnSaveFruit -->
     <Button
         android:id="@+id/btnSaveFruit"
         android:layout_width="match_parent"
