@@ -81,7 +81,7 @@ public class CustomerDashboardActivity extends AppCompatActivity {
     }
 
     private void loadAvailableFruits() {
-        allFruits = dbHelper.getAvailableFruitsForCustomer();
+        allFruits = dbHelper.getAllFruits();
         adapter = new FruitCustomerAdapter(this, allFruits);
         rvCustomerFruits.setAdapter(adapter);
     }
