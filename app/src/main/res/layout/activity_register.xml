@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center_vertical"
+    android:background="#FFFFFF">
+
+    <!-- Thay thế ảnh bằng Tiêu đề Fruit Order -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fruit Order"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#3BA2EB"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Full Name (Thay cho Nama Lengkap) -->
+    <EditText
+        android:id="@+id/edtFullName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rounded_edittext"
+        android:hint="Full Name"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPersonName"/>
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rounded_edittext"
+        android:hint="Email"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textEmailAddress"/>
+
+    <!-- Phone Number (Thay cho Nomor HP) -->
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rounded_edittext"
+        android:hint="Phone Number"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="phone"/>
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rounded_edittext"
+        android:hint="Password"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPassword"/>
+
+    <!-- Confirm Password (Thay cho Konfirmasi Password) -->
+    <EditText
+        android:id="@+id/edtConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rounded_edittext"
+        android:hint="Confirm Password"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:inputType="textPassword"/>
+
+    <!-- Nút Đăng ký (Thay cho Mendaftar) -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3BA2EB"
+        android:layout_marginBottom="16dp"/>
+</LinearLayout>

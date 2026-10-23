@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fruit Store"
+            android:textColor="#3BA2EB"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnViewHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="History"
+            android:backgroundTint="#9E9E9E"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnLogoutCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:backgroundTint="#F44336"
+            android:text="Logout" />
+    </LinearLayout>
+
+    <!-- Thanh Tìm kiếm -->
+    <EditText
+        android:id="@+id/edtSearchCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_edittext"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        android:hint="Find your favorite fruits..."
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="text" />
+
+    <!-- Danh sách Trái cây -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCustomerFruits"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

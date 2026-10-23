@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Fruit"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#3BA2EB"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/edtFruitName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rounded_edittext"
+        android:hint="Fruit Name"
+        android:paddingStart="16dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/edtFruitCategory"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rounded_edittext"
+        android:hint="Category (e.g. Tropical)"
+        android:paddingStart="16dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/edtFruitPrice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rounded_edittext"
+        android:hint="Price (VND)"
+        android:inputType="numberDecimal"
+        android:paddingStart="16dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/edtFruitQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rounded_edittext"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:paddingStart="16dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/edtFruitExpiry"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rounded_edittext"
+        android:hint="Expiry Date (YYYY-MM-DD)"
+        android:paddingStart="16dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/edtFruitDesc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_rounded_edittext"
+        android:hint="Description"
+        android:gravity="top|start"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnSaveFruit"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Save Fruit"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3BA2EB" />
+</LinearLayout>

@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    package="com.example.myapplication">
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+
+        <!-- Màn hình Đăng nhập (Chạy đầu tiên) -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize">
+            android:name=".activity.LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <!-- Các màn hình chức năng -->
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.AdminDashboardActivity" />
+        <activity android:name=".activity.CustomerDashboardActivity" />
+        <activity android:name=".activity.AddEditFruitActivity" />
+
+        <!-- ĐÂY LÀ DÒNG BỊ THIẾU GÂY CRASH KHI BẤM NÚT ORDERS -->
+        <activity android:name=".activity.OrderListActivity" />
+
+    </application>
 </manifest>
